@@ -1,0 +1,27 @@
+<form method="post" action="<TMPL_VAR NAME=SCRIPT_NAME>">
+<table>
+<tr>
+<td><strong>Username:</strong></td>
+<td>
+<input type="text" name="user" size="25">
+</td>
+</tr>
+<tr>
+<td><strong>Password:</strong></td>
+<td>
+<input type="password" name="password" size="25">
+</td>
+</tr>
+<tr align="center">
+<td colspan="2">
+<input type="hidden" name="action" value="logon">
+<input type="submit" name="login" value="Log in">
+</td>
+</tr>
+<tr align="center">
+<td colspan="2">
+<a href="<TMPL_VAR NAME=SCRIPT_NAME>?action=emailpw">I forgot my password</a>
+</td>
+</tr>
+</table>
+</form>

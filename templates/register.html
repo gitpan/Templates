@@ -1,0 +1,53 @@
+<form action="<TMPL_VAR NAME=SCRIPT_NAME>" method=post>
+<table>
+<TR><TD colspan=2>
+<strong>Required Fields</strong>
+</TD></TR><TR><TD>
+User Name
+</TD><TD>
+<input type=text name=user size=64  value="<TMPL_VAR NAME=user>"> <TMPL_VAR NAME=user_msg>
+</TD></TR><TR><TD>
+Password<br>
+</TD><TD>
+<input type=text name=password size=64  value=""> <TMPL_VAR NAME=password_msg>
+</TD></TR><TR><TD>
+Confirm Password
+</TD><TD>
+<input type=text name=cpassw size=64  value=""> <TMPL_VAR NAME=cpassw_msg>
+</TD></TR><TR><TD>
+Email
+</TD><TD>
+<input type=text name=email size=64  value="<TMPL_VAR NAME=email>"> <TMPL_VAR NAME=email_msg>
+</TD></TR><TR><TD colspan=2>
+<strong>Personal Information</strong>
+</TD></TR><TR><TD>
+First name
+</TD><TD>
+<input type=text name=first_name size=64  value="<TMPL_VAR NAME=first_name>">
+</TD></TR><TR><TD>
+MI
+</TD><TD>
+<input type=text name=middle_initial size=64  value="<TMPL_VAR NAME=middle_initial>">
+</TD></TR><TR><TD>
+Last name
+</TD><TD>
+<input type=text name=last_name size=64  value="<TMPL_VAR NAME=last_name>">
+</TD></TR><TR><TD>
+City
+</TD><TD>
+<input type=text name=city size=64  value="<TMPL_VAR NAME=city>">
+</TD></TR><TR><TD>
+State
+</TD><TD>
+<TMPL_VAR NAME=state>
+</TD></TR><TR><TD>
+Country
+</TD><TD>
+<input type=text name=country size=64  value="<TMPL_VAR NAME=country>">
+</TD></TR><TR><TD colspan=2>
+<input type="hidden" name="action" value="register">
+<CENTER>
+<input type="submit" name="submit" value="Submit">&nbsp;&nbsp;<input type="reset" value="Reset" name="reset"></CENTER>
+</TD></TR>
+</TABLE>
+</form>
